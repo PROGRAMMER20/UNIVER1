@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %} Головна {% endblock title %}
+{% block caption %} Головна сторінка {% endblock caption %}
+
+{% block content %}
+    <div id="logo1" class="jumbotron">
+        <h1 id="main">Університет Кібернетики</h1>
+        <p id="btn"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+    <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Абітурієнту</h2>
+        <p>Умови та порядок вступу. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">Дізнатися більше &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Дипломникам</h2>
+        <p>Тут  буде розміщено інформацію для дипломників. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">Дізнатися більше &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Аспірантам</h2>
+        <p>Інформація для Аспірантів.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Дізнатися більше &raquo;</a></p>
+      </div>
+    </div>
+  </div>
+    <style>
+        #logo1 {
+            background-image: url('../../static/img/logo_x2.jpg');
+            background-size: cover;
+        }
+        #main {
+            margin-top: -30px;
+            margin-left: 40px;
+            font-size: 50pt;
+            color: purple;
+            text-shadow: 3px 3px yellow;
+        }
+        #btn {
+            margin-left: 39px;
+            margin-top: 130px;
+        }
+    </style>
+{% endblock content %}
